@@ -1,0 +1,20 @@
+# Set root logger level to DEBUG and its appender to A1.
+log4j.rootCategory=INFO, A1
+
+# A1 is set to be a TimestampFileAppender.
+# TimestampPattern uses SimpleDateFormat pattern.
+log4j.appender.A1=pdfmetadataextend.TimestampFileAppender
+log4j.appender.A1.threshold=INFO
+log4j.appender.A1.TimestampPattern=yyyy_MM_dd__HH_mm_ss_SSS
+#log4j.appender.A1.File=.\\log\\test.{timestamp}.log
+log4j.appender.A1.File=Z:\\PDF-METADATA\\pdfmetadata-export.{timestamp}.log
+log4j.logger.pdfmetadataextend=INFO,A1
+
+
+# A1 uses PatternLayout.
+log4j.appender.A1.layout=org.apache.log4j.PatternLayout
+log4j.appender.A1.layout.ConversionPattern=%d [%t] %-5p %C{1}.%M %x - %m%n
+
+
+
+
