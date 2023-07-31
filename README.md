@@ -1,4 +1,4 @@
-# PDFMetaDataExtend
+# PDFMetaDataExtendBackFill2.java
 Add DocInfo and XMP metadata to a PDF file using iText libraries
 
 This project contains an example demonstrating how to add XMP metadata and document properties to a PDF file.
@@ -7,3 +7,11 @@ which is a stand alone program. It requires three input arguments. The arguments
 creationIntervalHrs 0
 batchSize 100
 pdfFolderName C:\\tmp\\PDFs
+
+
+# WaterMarkProofComponent.java
+have c:\temp\watermark directory created
+have the sample.pdf under that dir
+
+
+
