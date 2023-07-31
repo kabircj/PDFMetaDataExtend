@@ -48,14 +48,15 @@ import com.lowagie.text.xml.xmp.XmpWriter;
 
 
 public class PDFMetaDataExtendBackFill2 {
-	private static Logger loggerA1 = Logger.getLogger("A1");
+	
 	private static final String EXPORT_PATH_BASE = "Z:\\PDF-METADATA"; 
 	String dateFolderName = "";
 	File newDateFolder = null;
 	
-	public PDFMetaDataExtendBackFill2() {
-		PropertyConfigurator.configure("log4j.configuration");
-	}
+	/*
+	 * public PDFMetaDataExtendBackFill2() {
+	 * PropertyConfigurator.configure("log4j.configuration"); }
+	 */
 	
 	public static void main (String[] args){
 		try {			
@@ -147,12 +148,12 @@ public class PDFMetaDataExtendBackFill2 {
 								e.printStackTrace();
 								continue;
 							}
-							loggerA1.info("Added PDF metadata for file::" + pdfFileName);	
+							System.out.println("Added PDF metadata for file::" + pdfFileName);	
 					} else {
-						loggerA1.info("pdfFileName is null or blank. Skipping... ");
+						System.out.println("pdfFileName is null or blank. Skipping... ");
 					}	
 				} else {
-					loggerA1.info("CreationInterval=0 or hoursDiff <= creationIntervalInt. Skipping article .... " );
+					System.out.println("CreationInterval=0 or hoursDiff <= creationIntervalInt. Skipping article .... " );
 				}
 			}			
 		} catch (Exception e) {
