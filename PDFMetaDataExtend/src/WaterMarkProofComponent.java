@@ -27,8 +27,7 @@ public class WaterMarkProofComponent {
 	private static final File RESULT_PDF = new File("c:/temp/watermark/result.pdf");
 	private static final File TEMP_PDF = new File("c:/temp/watermark/temp.pdf"); 
 
-	public static void main(String[] args) throws Exception {
-		System.setProperty("javax.xml.parsers.DocumentBuilderFactory","com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl");		
+	public static void main(String[] args) throws Exception {		
 		watermarkPDF();		
 		addHeaderFooter();
 		if(TEMP_PDF.exists()) {
