@@ -9,9 +9,7 @@ batchSize 100
 pdfFolderName C:\\tmp\\PDFs
 
 
-# WaterMarkProofComponent.java
-have c:\temp\watermark directory created
-have the sample.pdf under that dir
+
 
 
 
