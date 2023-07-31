@@ -22,10 +22,10 @@ import com.itextpdf.text.pdf.PdfStamper;
 public class WaterMarkProofComponent {
 	
 	// have c:\temp\watermark directory created
-	// have the sample.pdf under that dir
-	private static final File SOURCE_PDF = new File("c:/temp/watermark/sample.pdf"); 
-	private static final File RESULT_PDF = new File("c:/temp/watermark/result.pdf");
-	private static final File TEMP_PDF = new File("c:/temp/watermark/temp.pdf"); 
+	// have the sample.pdf under that dird
+	private static final File SOURCE_PDF = new File("sample.pdf"); 
+	private static final File RESULT_PDF = new File("result.pdf");
+	private static final File TEMP_PDF = new File("temp.pdf"); 
 
 	public static void main(String[] args) throws Exception {		
 		watermarkPDF();		
